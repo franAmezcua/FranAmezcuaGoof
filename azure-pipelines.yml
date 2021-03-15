@@ -21,3 +21,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
+- task: SnykSecurityScan@0
+  inputs:
+    serviceConnectionEndpoint: 'Snyk_Paco'
+    testType: 'app'
+    monitorOnBuild: true
+    failOnIssues: true
+    projectName: 'Snyk_Azure_Goof'

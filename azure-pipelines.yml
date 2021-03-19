@@ -23,8 +23,9 @@ steps:
     tasks: 'build'
 - task: SnykSecurityScan@0
   inputs:
-    serviceConnectionEndpoint: 'Snyk_Paco'
+    serviceConnectionEndpoint: 'Snyk Goof'
     testType: 'app'
     monitorOnBuild: true
     failOnIssues: true
-    projectName: 'Snyk_Azure_Goof'
+    projectName: 'SnykTest'
+    organization: 'Snyk'
